@@ -1,0 +1,22 @@
+h1{
+  font-size: 2.9em;
+}
+.left{
+  float: left;
+  text-align: left;
+  padding: 0.5em 0.5em 0.5em 0;
+  border-right: 5px solid white;
+}
+
+.right{
+  float: right;
+  text-align: right;
+  padding: 0.5em 0;
+  color: white;
+}
+
+.head-wrapper{
+  width: 50%;
+  height: 20%;
+  margin-bottom: 1em;
+}

@@ -1,14 +1,16 @@
+// import library components
 import React, { Component } from 'react';
-import logo from './logo.svg';
+
+// import file components
 import './App.css';
+import Homepage from "./components/pages/Homepage"
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <h1>Marketplace</h1>
-          <h2>Get board games cheap, <br/>compare prices at different stores.</h2>
+          <Homepage />
         </header>
       </div>
     );
