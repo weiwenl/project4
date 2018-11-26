@@ -1,9 +1,9 @@
 // import library components
-import React, {Component, Fragment} from "react";
-import {Input} from 'semantic-ui-react'
+import React, {Component} from "react";
 
 // import file components
 import './Search.css';
+import Form from './Form';
 
 
 class Search extends Component {
@@ -13,14 +13,7 @@ class Search extends Component {
   }
   render() {
     return (
-      <Fragment>
-
-        <div class="ui action input">
-            <input type="text" id="" placeholder="e.g Pandemic"/>
-            <button class="ui button primary" onclick="">Search</button>
-        </div>
-
-      </Fragment>
+      <Form />
     );
   }
 }
