@@ -20,3 +20,11 @@ h1{
   height: 20%;
   margin-bottom: 1em;
 }
+.Homepage-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

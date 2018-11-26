@@ -7,7 +7,7 @@ import './Search.css';
 import Form from './Form';
 
 
-class Search extends Component {
+class SearchProductList extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -21,16 +21,12 @@ class Search extends Component {
     this.setState({query: e.target.value});
   }
   render() {
-    let redirect = null;
-    // this.state.query.length > 3 ? <Redirect to='/products' /> : console.log("nothing");
-    ((this.state.query.length < 3) ? (redirect=null) : (redirect = <Redirect to='/products' />))
     return (
       <Fragment>
-        {redirect}
         <Form change={this.changeHandler}/>
       </Fragment>
     );
   }
 }
 
-export default Search;
+export default SearchProductList;

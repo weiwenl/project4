@@ -1,0 +1,13 @@
+.ProductList-title {
+  min-height: 10vh;
+  text-align: center;
+  padding: 0.5em 0;
+}
+.ProductList-header {
+  background-color: #282c34;
+  min-height: 15vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

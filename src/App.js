@@ -1,18 +1,22 @@
 // import library components
-import React, { Component } from 'react';
-
+import React, { Component, Fragment } from 'react';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 // import file components
-import './App.css';
-import Homepage from "./components/pages/Homepage"
+
+import Homepage from "./components/pages/Homepage";
+import ProductList from "./components/pages/ProductList";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <Homepage />
-        </header>
-      </div>
+      <Fragment>
+        <Router>
+          <Switch>
+            <Route path="/" exact strict component={Homepage} />
+            <Route path="/products" exact strict component={ProductList} />
+          </Switch>
+        </Router>
+      </Fragment>
     );
   }
 }
