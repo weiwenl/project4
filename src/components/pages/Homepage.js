@@ -1,10 +1,9 @@
 // import library components
 import React, {Component, Fragment} from "react";
-import { Card, Image} from 'semantic-ui-react'
 
 // import file components
 import "./Homepage.css"
-// import ProductCell from "../features/ProductCell"
+import ProductCell from "../features/ProductCell"
 
 
 class Homepage extends Component {
@@ -27,16 +26,6 @@ class Homepage extends Component {
   }
 
   render() {
-    let recommended = this.state.topResult.map((game) => {
-      return(
-            <Card
-              key={game.id} // Unique key identifier for React
-              image={game.image_url} // Url of the image for the current object inside api
-              header={game.name}
-              description={game.description}
-            />
-          );
-        });
 
     return (
       <Fragment>
@@ -62,9 +51,7 @@ class Homepage extends Component {
           </div>
           <div className="Homepage-body">
             <h1>Recommended Games</h1>
-            <Card.Group>
-                  {recommended}
-            </Card.Group>
+            <ProductCell topResult={this.state.topResult} />
           </div>
       </Fragment>
     );
