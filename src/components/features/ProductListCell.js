@@ -11,6 +11,7 @@ const ProductListCell = (props) => {
             header={game.name}
             meta={game.year_published}
             description={game.description}
+            href={`/products/search/${ game.id }`}
           />
         );
       });
