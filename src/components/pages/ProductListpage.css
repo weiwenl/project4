@@ -1,7 +1,8 @@
 .ProductList-title {
+  background-color: #282c34;
   min-height: 10vh;
   text-align: center;
-  padding: 0.5em 0;
+  padding: 1em 0 0.5em 0;
 }
 .ProductList-header {
   background-color: #282c34;

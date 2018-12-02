@@ -1,7 +1,7 @@
 // import library components
 import React, {Component, Fragment} from "react";
 // import file components
-import './ProductList.css'
+import './ProductListpage.css'
 import '../features/Search.css';
 import SearchProductList from '../features/SearchProductList'
 

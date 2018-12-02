@@ -4,7 +4,7 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 // import file components
 
 import Homepage from "./components/pages/Homepage";
-import ProductList from "./components/pages/ProductList";
+import ProductList from "./components/pages/ProductListpage";
 
 class App extends Component {
   render() {

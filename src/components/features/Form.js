@@ -17,7 +17,7 @@ const Form = props => {
 };
 
 Form.propTypes = {
-  changed: PropTypes.func.isRequired,
+  change: PropTypes.func.isRequired,
   search: PropTypes.func.isRequired
 };
 
