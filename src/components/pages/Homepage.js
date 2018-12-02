@@ -4,6 +4,7 @@ import React, {Component, Fragment} from "react";
 // import file components
 import "./Homepage.css"
 import ProductCell from "../features/ProductCell"
+import SearchInput from "../features/SearchInput"
 
 
 class Homepage extends Component {
@@ -45,7 +46,7 @@ class Homepage extends Component {
             </div>
 
             <div class="ui action input">
-                <input type="text" placeholder="e.g Pandemic"/>
+              <SearchInput />
             </div>
 
           </div>
