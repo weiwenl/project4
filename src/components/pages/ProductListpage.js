@@ -1,11 +1,11 @@
 // import library components
 import React, {Component, Fragment} from "react";
-import {Card} from 'semantic-ui-react'
 // import file components
 import './ProductListpage.css'
 import '../features/Search.css';
 
 import SearchProductList from '../features/SearchProductList'
+import ProductListCell from '../features/ProductListCell'
 
 class ProductListpage extends Component {
   constructor(props) {
@@ -34,24 +34,17 @@ class ProductListpage extends Component {
     fetch(URL).then( (response) => {
       response.json().then( (data) => {
         this.setState({
-            results: data.games
+            results: data.games,
+            isLoading: false
         })
       })
     })
   }
 
   render() {
-    let searchResults = this.state.results.map((game) => {
-      return(
-            <Card
-              key={game.id} // Unique key identifier for React
-              image={game.image_url} // Url of the image for the current object inside api
-              header={game.name}
-              meta={game.year_published}
-              description={game.description}
-            />
-          );
-        });
+    let displayMsg = null;
+    (this.state.isLoading) ? (displayMsg = "Waiting for Results.") : (displayMsg = "Your Search Results.")
+
     return (
       <Fragment>
         <div className="ProductList-title">
@@ -64,11 +57,9 @@ class ProductListpage extends Component {
         <div className="ProductList-header">
           <SearchProductList change={this.changeHandler} search={this.formSubmitHandler}/>
         </div>
-        <div>
-          <h1>Products</h1>
-          <Card.Group>
-                {searchResults}
-          </Card.Group>
+        <div className="ProductList-body">
+          <h1>{displayMsg}</h1>
+            <ProductListCell results={this.state.results}/>
         </div>
       </Fragment>
     );

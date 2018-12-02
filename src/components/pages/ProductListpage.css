@@ -12,3 +12,6 @@
   align-items: center;
   justify-content: center;
 }
+.ProductList-body {
+  padding: 1% 0 0 1.5%;
+}
