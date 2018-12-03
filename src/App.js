@@ -14,7 +14,8 @@ class App extends Component {
         <Router>
           <Switch>
             <Route path="/" exact strict component={Homepage} />
-            <Route path="/products" exact strict component={ProductList} />
+            {/* <Route path="/products/?query=" exact  component={ProductList} /> */}
+            <Route path="/products" exact  component={ProductList} />
             <Route path="/products/search/:id" exact component={ProductPrices} />
           </Switch>
         </Router>

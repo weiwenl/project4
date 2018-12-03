@@ -19,6 +19,14 @@ class ProductListpage extends Component {
     this.formSubmitHandler = this.formSubmitHandler.bind(this);
   }
 
+  componentWillMount(){
+  let query = '';
+  if (localStorage && localStorage.getItem('query')) {
+     query = JSON.parse(localStorage.getItem('query'));
+  }
+   this.setState({searchQuery: query})
+ }
+
   changeHandler(e) {
     console.log("searching productList", e.target.value);
     this.setState({searchQuery: e.target.value});
@@ -55,7 +63,7 @@ class ProductListpage extends Component {
           </h1>
         </div>
         <div className="ProductList-header">
-          <SearchProductList change={this.changeHandler} search={this.formSubmitHandler}/>
+          <SearchProductList change={this.changeHandler} search={this.formSubmitHandler} i={this.state.searchQuery}/>
         </div>
         <div className="ProductList-body">
           <h1>{displayMsg}</h1>

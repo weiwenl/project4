@@ -11,7 +11,7 @@ const SearchProductList = props => {
   return (
     <Fragment>
         <div class="ui action input">
-            <input type="text" placeholder="e.g Pandemic" onChange={props.change}/>
+            <input type="text" placeholder="e.g Pandemic" onChange={props.change} value={props.i} autoFocus/>
             <button class="ui button primary" onClick={props.search}>Search</button>
         </div>
     </Fragment>
