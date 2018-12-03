@@ -15,10 +15,11 @@ class SearchInput extends Component {
     this.changeHandler = this.changeHandler.bind(this);
   }
   changeHandler(e){
+    let queryForm = e.target.value;
     console.log("searching for", e.target.value);
     this.setState({query: e.target.value});
     localStorage.setItem('query',
-    JSON.stringify(this.state.query));
+    JSON.stringify(queryForm));
   }
   render() {
     let redirect = null;
