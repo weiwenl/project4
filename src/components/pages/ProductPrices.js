@@ -77,7 +77,7 @@ class ProductPrices extends Component {
     let searchPrices = this.state.prices.map((price, index) => {
       return(
         <Fragment>
-            <Card fluid
+            <Card
               key={index} // Unique key identifier for React
               // image={}
               description={price.price_text}
