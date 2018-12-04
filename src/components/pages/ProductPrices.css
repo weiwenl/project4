@@ -13,11 +13,12 @@
 }
 
 .itemReviews{
-  margin: 5vh 4vh 10vh 0;
+  margin: 1em 4em 1em 2em;
+  height: 100vh;
 }
 
 .itemComparison{
-  margin: 2vh 2vh 0 2vh;
+  padding: 1em 1em 5em 4em;
 }
 
 .itemComparison .ui a:hover{
@@ -26,11 +27,12 @@
 
 .content-wrapper{
   background-color: #282c34;
-  padding: 1vh 0 0 0;
+  padding: 1em 0 0 0;
 }
 .ProductList-title {
   background-color: #282c34;
   min-height: 10vh;
+  font-size: 20px;
   text-align: center;
   padding: 1.5em 0 0.5em 0;
 }

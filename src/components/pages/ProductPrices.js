@@ -55,7 +55,7 @@ class ProductPrices extends Component {
     let searchItem = this.state.item.map((item, index) => {
       return(
         <Fragment key={index} className="searchItem-display">
-            <Image src={item.image_url} size='large' centered />
+            <Image src={item.image_url} size='medium' centered />
             <h1 className="product-name">{item.name}</h1>
         </Fragment>
       );
