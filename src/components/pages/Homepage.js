@@ -43,12 +43,12 @@ class Homepage extends Component {
                 <h2 ui header>Get board games cheap, <br/>
                 compare prices at different stores.</h2>
               </div>
-            </div>
 
-            <div class="ui action input">
-              <SearchInput />
+              <div class="ui action input">
+                <SearchInput />
+              </div>
             </div>
-
+            
           </div>
           <div className="Homepage-body">
             <h1>Recommended Games</h1>
