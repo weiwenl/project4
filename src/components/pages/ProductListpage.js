@@ -50,23 +50,23 @@ class ProductListpage extends Component {
   }
 
   render() {
-    let displayMsg = null;
-    (this.state.isLoading) ? (displayMsg = "Waiting for Results.") : (displayMsg = "Your Search Results.")
 
     return (
       <Fragment>
         <div className="ProductList-title">
-          <h1 ui header>
-            <span style={{color:"red"}}>Mark</span>
-            <span style={{color:"yellow"}}>et</span>
-            <span style={{color:"cornFlowerBlue"}}>place</span>
-          </h1>
+          <a href="/">
+            <h1 ui header>
+              <span style={{color:"red"}}>Mark</span>
+              <span style={{color:"yellow"}}>et</span>
+              <span style={{color:"cornFlowerBlue"}}>place</span>
+            </h1>
+          </a>
         </div>
+
         <div className="ProductList-header">
           <SearchProductList change={this.changeHandler} search={this.formSubmitHandler} i={this.state.searchQuery}/>
         </div>
         <div className="ProductList-body">
-          <h1>{displayMsg}</h1>
             <ProductListCell results={this.state.results}/>
         </div>
       </Fragment>
