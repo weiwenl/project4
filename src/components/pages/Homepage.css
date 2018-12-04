@@ -2,7 +2,7 @@
   user-select: none;
 }
 h1{
-  font-size: 2.8em;
+  font-size: 2.4em;
 }
 h2{
   font-size: 1.6em;
@@ -16,14 +16,14 @@ h2{
 .left{
   float: left;
   text-align: left;
-  padding: 0.5em 1.5em 0.5em 1.5em;
+  padding: 0.5em 2.5em 0.5em 1.5em;
   border-right: 5px solid white;
 }
 
 .right{
   float: right;
   text-align: right;
-  padding: 0.5em 1.5em 0.5em 1em;
+  padding: 0.5em 1.5em 0.5em 0;
   color: white;
 }
 
