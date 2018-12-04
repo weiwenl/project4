@@ -10,6 +10,7 @@ const ProductCell = (props) => {
             image={game.image_url} // Url of the image for the current object inside api
             header={game.name}
             description={game.description}
+            href={`/products/search/${ game.id }`}
           />
         );
       });
